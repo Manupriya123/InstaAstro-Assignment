@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.upper-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffcc00;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 8px 12px;
+  /* border: none; */
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.call-btn,
+.chat-btn {
+  background-color: #fff;
+  color: green;
+  border: 2px solid green;
+}
+
+.signup-btn {
+  background-color: #ff6600;
+  color: #fff;
+  border: 2px solid #ff6600;
+}
+
+.hero-outer-section {
+  background-color: #0073e6;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 40px 20px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.hero-section .phones img {
+  width: 330px;
+  margin: 0 10px;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.hero-text div {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.hero-text p {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.hero-actions {
+  margin-top: 20px;
+  position: relative;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-actions .chat-btn,
+.hero-actions .call-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  border: 2px solid #ff6600;
+  border-radius: 50px;
+  box-shadow: #000;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-icon p {
+  margin: 0;
+}
+
+.btn-icon img {
+  width: 20px;
+}
+
+.mobile {
+  display: none;
+}
+
+.action-get-app {
+  display: none;
+}
+
+.hero-actions-mobile{
+    display: none;
+}
+
+@media (max-width: 769px) {
+  .desktop,
+  .actions {
+    display: none;
+  }
+
+  .mobile,
+  .action-get-app {
+    display: block;
+  }
+
+  .hero-actions-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+  }
+
+  .hero-actions-mobile button{
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 50px;
+    border: 2px solid #ff6600;
+    padding: 5px;
+  }
+
+  .get-app-btn {
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    padding: 2px 5px;
+    cursor: pointer;
+  }
+
+  .mob-ham {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .upper-header {
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-section {
+    padding-top: 25px;
+  }
+
+  .hero-text {
+    margin: 0;
+  }
+
+  .hero-text div {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  .girl img {
+    width: 240px;
+  }
+
+  .hambureger {
+    width: 20px;
+  }
+
+  .download-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .download-btn {
+    width: 110px;
+  }
+
+  .above-header-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+
+  }
+
+  .action-conatiner{
+    background-color: #ff6600;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+  }
+
+  .above-header-action p{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .hero-outer-section{
+    margin: 10px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 468px) {
+  .girl img {
+    width: 145px;
+  }
+
+  .hero-text div {
+    margin: 10px 0;
+  }
+}
